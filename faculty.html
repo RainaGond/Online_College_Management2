@@ -1,0 +1,759 @@
+<html>
+<title>faculty</title>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/owl.carousel.min.css" rel="stylesheet"> 
+<link href="css/aos.css" rel="stylesheet"> 
+<link href="css/style.css" rel="stylesheet"> 
+<link href="ourweb.css" rel="stylesheet"> 
+<link href="icofont/icofont.min.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/hover-min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+	<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    color:#333;
+    overflow-x:hidden;
+}
+
+
+
+.faculty-nav{
+    margin:0;
+    border:0;
+    border-radius:0;
+    background:#7a0000;
+    min-height:70px;
+}
+
+.logo{
+    color:white !important;
+    font-size:24px;
+    font-weight:bold;
+    line-height:40px;
+}
+
+.faculty-nav .navbar-nav > li > a{
+    color:white;
+    padding:25px 15px;
+    transition:.3s;
+}
+
+.faculty-nav .navbar-nav > li > a:hover,
+.faculty-nav .navbar-nav > .active > a{
+    color:#7a0000;
+    background:#fff5f5;
+}
+
+
+.faculty-hero{
+    height:600px;
+    position:relative;
+
+    background-image:url("https://iul.org.in/assets/administrativeBlock-DCB2XEAn.webp");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.faculty-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+	background: rgba(122, 0, 0, 0.3);
+
+}
+
+.faculty-content{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+    padding:20px;
+    color:white;
+}
+
+.small-title{
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:bold;
+}
+
+.small-title i{
+    margin-right:7px;
+}
+
+.faculty-content h1{
+    font-size:70px;
+    margin:20px 0 15px;
+    font-weight:bold;
+}
+
+.faculty-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.faculty-btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:white;
+    color:#7a0000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:3px;
+    transition:.3s;
+}
+
+.faculty-btn:hover{
+    background:#fff5f5;
+    color:#7a0000;
+    transform:translateY(-3px);
+}
+
+.faculty-btn i{
+    margin-left:8px;
+}
+
+
+
+.faculty-intro{
+    padding:80px 0 40px;
+    background:#fff;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.section-heading > span{
+    color:#7a0000;
+    font-size:13px;
+    letter-spacing:3px;
+    font-weight:bold;
+}
+
+.section-heading h2{
+    font-size:42px;
+    margin:15px 0;
+    color:#222;
+}
+
+.section-heading h2 strong{
+    color:#7a0000;
+}
+
+.heading-line{
+    width:70px;
+    height:4px;
+    background:#7a0000;
+    margin:20px auto;
+}
+
+.section-heading p{
+    color:#777;
+    font-size:16px;
+    line-height:1.8;
+}
+
+
+
+.faculty-list{
+    padding:40px 0 90px;
+    background:#fff5f5;
+}
+
+.faculty-card{
+    background:white;
+    margin-top:30px;
+    border-radius:5px;
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+}
+
+.faculty-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(122,0,0,.20);
+}
+
+
+
+.faculty-image{
+    height:330px;
+    position:relative;
+    overflow:hidden;
+}
+
+.faculty-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.faculty-card:hover .faculty-image img{
+    transform:scale(1.08);
+}
+
+.image-overlay{
+    position:absolute;
+    left:0;
+    bottom:-70px;
+
+    width:100%;
+    height:70px;
+
+    background:rgba(122,0,0,.90);
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+
+    padding-right:25px;
+
+    transition:.4s ease;
+}
+
+.faculty-card:hover .image-overlay{
+    bottom:0;
+}
+
+.image-overlay a{
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid white;
+    border-radius:50%;
+
+    color:white;
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.image-overlay a:hover{
+    background:white;
+    color:#7a0000;
+}
+
+
+
+.faculty-info{
+    padding:25px;
+    min-height:155px;
+}
+
+.department{
+    color:#7a0000;
+    font-size:11px;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+.faculty-info h3{
+    font-size:21px;
+    margin:12px 0 8px;
+    color:#222;
+}
+
+.faculty-info p{
+    color:#777;
+    line-height:1.6;
+    margin:0;
+}
+
+
+
+.faculty-cta{
+    background:#7a0000;
+    padding:75px 0;
+    text-align:center;
+    color:white;
+
+}
+
+.cta-content{
+    max-width:700px;
+    margin:auto;
+}
+
+.cta-content > i{
+    font-size:50px;
+}
+
+.cta-content h2{
+    font-size:35px;
+    margin:20px 0 15px;
+}
+
+.cta-content p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.cta-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:13px 25px;
+
+    background:white;
+    color:#7a0000;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.cta-btn:hover{
+    background:#fff5f5;
+    color:#7a0000;
+}
+
+.cta-btn i{
+    margin-left:7px;
+}
+
+
+
+.faculty-footer{
+    padding:25px 0;
+    background:#4d0000;
+    text-align:center;
+    color:#ddd;
+	
+}
+
+.faculty-footer p{
+    margin:0;
+}
+
+
+
+@media(max-width:767px){
+
+    .faculty-nav .navbar-nav > li > a{
+        padding:12px 15px;
+    }
+
+    .faculty-hero{
+        height:500px;
+    }
+
+    .faculty-content h1{
+        font-size:45px;
+    }
+
+    .faculty-content p{
+        font-size:15px;
+    }
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .faculty-image{
+        height:300px;
+    }
+
+    .cta-content h2{
+        font-size:28px;
+    }
+}
+	</style>
+</head>
+
+<body>
+
+<!---navbar---->
+<nav class="navbar navbar-default faculty-nav" >
+<div class="container-fluid" style="background:#7a0000;">
+<div class="navbar-header">
+<button type="button"class="navbar-toggle" data-toggle="collapse" data-target="#menu" style="color:white;">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="row">
+<div class="col-sm-3"><h3 class="logo"><b>Integral University</b></h3></div>
+<div class="col-sm-9">
+<div class="collapse navbar-collapse" id="menu">
+<ul class="nav navbar-nav">
+<li><a href="#" style="color:white;font-size:15px;"><span class="icofont-home"></span></a></li>
+<li><a href="ourweb.html" style="font-size:15px;">Home</a></li>
+<li><a href="course.html" style="font-size:15px;">Courses</a></li>
+<li><a href="about.html" style="font-size:15px;">About Us</a></li>
+<li><a href="registration.html" style="font-size:15px;">Registration</a></li>
+<li><a href="library.html" style="font-size:15px;">Library</a></li>
+<li><a href="contact.html" style="font-size:15px;">Contact us</a></li>
+<li><a href="faculty.html" style="font-size:15px;">Faculty</a></li>
+<li><a href="login1.html" style="font-size:15px;">Login</a></li>
+<input type="text" placeholder="Enter Name" style="margin-top:20px;">
+<span class="icofont-search" style="color:white;"></span>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<!----navbar complete---->
+<!--  hero section -->
+
+<section class="faculty-hero">
+<div class="faculty-overlay"></div>
+ <div class="faculty-content">
+<span class="small-title">
+<i class="icofont icofont-users-alt-3"></i>
+            INTEGRAL UNIVERSITY
+</span><h1>Our Faculty</h1>
+
+ <p> Inspiring minds, shaping futures and creating a culture of
+ knowledge, innovation and excellence.
+</p>
+<a href="#faculty-section" class="faculty-btn">
+Meet Our Faculty
+<i class="icofont icofont-arrow-right"></i>
+ </a>
+</div>
+</section>
+
+
+<!--  INTRO  -->
+
+<section class="faculty-intro" id="faculty-section">
+<div class="container">
+<div class="section-heading">
+<span>ACADEMIC EXCELLENCE</span><h2> Meet Our<strong>Faculty</strong></h2>
+<div class="heading-line"></div>
+<p>
+Our dedicated faculty members bring together academic
+expertise, research experience and a passion for teaching
+to provide students with an enriching learning environment.
+</p>
+</div>
+ </div>
+</section>
+
+
+<!-- FACULTY CARDS -->
+
+<section class="faculty-list">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- CARD 1 -->
+
+            <div class="col-md-4 col-sm-6">
+
+                <div class="faculty-card">
+
+                    <div class="faculty-image">
+
+                        <img src="https://iul.org.in/assets/kritikaJaiswal-oOUYny6f.webp"
+                             alt="Head of Computer Science Department">
+
+                        <div class="image-overlay">
+                            <a href="#">
+                                <i class="icofont icofont-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="faculty-info">
+
+                        <span class="department">
+                            ENGINEERING & IT
+                        </span>
+
+                        <h3>Dr. Shish Ahmad</h3>
+
+                        <p>
+                            Head of Department
+                            <br>
+                            Computer Science & Engineering
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="col-md-4 col-sm-6">
+
+                <div class="faculty-card">
+
+                    <div class="faculty-image">
+
+                        <img src="https://iul.org.in/assets/muhiuddin-C9feGjg2.webp"
+                             alt="Medical Faculty">
+
+                        <div class="image-overlay">
+                            <a href="#">
+                                <i class="icofont icofont-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="faculty-info">
+
+                        <span class="department">
+                            MEDICAL & HEALTH SCIENCES
+                        </span>
+
+                        <h3>Head of Department</h3>
+
+                        <p>
+                            Department of Medical & Health Sciences
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="col-md-4 col-sm-6">
+
+                <div class="faculty-card">
+
+                    <div class="faculty-image">
+
+                        <img src="https://iul.org.in/assets/noorin-CFO_79a6.webp"
+                             alt="Pharmacy Faculty">
+
+                        <div class="image-overlay">
+                            <a href="#">
+                                <i class="icofont icofont-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="faculty-info">
+
+                        <span class="department">
+                            PHARMACY
+                        </span>
+
+                        <h3>Head of Department</h3>
+
+                        <p>
+                            Department of Pharmacy
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="col-md-4 col-sm-6">
+
+                <div class="faculty-card">
+
+                    <div class="faculty-image">
+
+                        <img src="https://iul.org.in/assets/vikasPathak-Dv8LN6Ic.webp"
+                             alt="Management Faculty">
+
+                        <div class="image-overlay">
+                            <a href="#">
+                                <i class="icofont icofont-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="faculty-info">
+
+                        <span class="department">
+                            MANAGEMENT
+                        </span>
+
+                        <h3>Prof. Asma Farooque</h3>
+
+                        <p>
+                            Head of Department
+                            <br>
+                            Business Management
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 5 -->
+
+            <div class="col-md-4 col-sm-6">
+
+                <div class="faculty-card">
+
+                    <div class="faculty-image">
+
+                        <img src="https://iul.org.in/assets/saltanat-BmeSvlHi.webp"
+                             alt="Law Faculty">
+
+                        <div class="image-overlay">
+                            <a href="#">
+                                <i class="icofont icofont-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="faculty-info">
+
+                        <span class="department">
+                            LAW
+                        </span>
+
+                        <h3>Head of Department</h3>
+
+                        <p>
+                            Department of Law
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 6 -->
+
+            <div class="col-md-4 col-sm-6">
+
+                <div class="faculty-card">
+
+                    <div class="faculty-image">
+
+                        <img src="https://iul.org.in/assets/nagmatabassum-DtlnEKwj.webp"
+                             alt="Architecture Faculty">
+
+                        <div class="image-overlay">
+                            <a href="#">
+                                <i class="icofont icofont-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="faculty-info">
+
+                        <span class="department">
+                            ARCHITECTURE
+                        </span>
+
+                        <h3>Head of Department</h3>
+
+                        <p>
+                            Department of Architecture
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="faculty-cta">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <i class="icofont icofont-graduate-alt"></i>
+
+            <h2>
+                Learn From Experienced Minds
+            </h2>
+
+            <p>
+                Discover a learning environment where knowledge,
+                innovation and experience come together.
+            </p>
+
+            <a href="#" class="cta-btn">
+                Explore Departments
+                <i class="icofont icofont-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="faculty-footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 Integral University. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

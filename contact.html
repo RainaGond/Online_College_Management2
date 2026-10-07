@@ -1,0 +1,345 @@
+<html>
+<head>
+<title> Student Login</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/owl.carousel.min.css" rel="stylesheet"> 
+<link href="css/aos.css" rel="stylesheet"> 
+<link href="css/style.css" rel="stylesheet"> 
+<link href="ourweb.css" rel="stylesheet"> 
+<link href="icofont/icofont.min.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/hover-min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<style>
+.campus{
+background-image:url('num.png');
+background-size:cover;
+background-position:center;
+position:relative;
+min-height:500px;
+top:0;
+}
+.color{
+	position:relative;
+	min-height:500px;
+	text-align:center;
+	background: rgba(122, 0, 0, 0.4);
+	width:100%;
+}
+.logo2{
+min-height:100px;
+}
+@media(max-width:900px){
+.logo2 img{
+min-height:70px;
+width:100%;
+}
+}
+.faculty-nav .navbar-nav > li > a{
+    color:white;
+    padding:25px 15px;
+    transition:.3s;
+}
+
+.faculty-nav .navbar-nav > li > a:hover,
+.faculty-nav .navbar-nav > .active > a{
+    color:#7a0000;
+    background:#fff5f5;
+}
+
+
+.regist{
+min-height:700px;
+background:#fff5f5;
+border-radius:100px 0px 100px 0px;
+}
+.login{
+min-height:100px;
+background:#7a0000;
+border-radius:50px 0px 50px 0px;
+}
+.login1{
+color:white;
+font-size:35px;
+font-family:sans-serif;
+text-align:center;
+}
+.sign{
+color:white;
+font-size:35px;
+font-family:sans-serif;
+text-align:center;
+}
+@media(max-width:900px){
+.login1{
+color:white;
+font-size:25px;
+color:white;
+font-family:sans-serif;
+text-align:center;
+}
+}
+.login1:hover{
+color:lightgreen;
+}
+
+
+.page{
+min-height:500px;
+background:white;
+}
+</style>
+</head>
+<!-----navbar------>
+<body>
+<!-----header--->
+<div class="container-fluid">
+<div class="row menu">
+<!---navbar---->
+<nav class="navbar navbar-default faculty-nav" >
+<div class="container-fluid" style="background:#7a0000;">
+<div class="navbar-header">
+<button type="button"class="navbar-toggle" data-toggle="collapse" data-target="#menu" style="color:white;">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="row">
+<div class="col-sm-3"><h3 class="logo"><b>Integral University</b></h3></div>
+<div class="col-sm-9">
+<div class="collapse navbar-collapse" id="menu">
+<ul class="nav navbar-nav">
+<li><a href="#" style="color:white;font-size:15px;"><span class="icofont-home"></span></a></li>
+<li><a href="ourweb.html" style="font-size:15px;">Home</a></li>
+<li><a href="course.html" style="font-size:15px;">Courses</a></li>
+<li><a href="about.html" style="font-size:15px;">About Us</a></li>
+<li><a href="registration.html" style="font-size:15px;">Registration</a></li>
+<li><a href="library.html" style="font-size:15px;">Library</a></li>
+<li><a href="contact.html" style="font-size:15px;">Contact us</a></li>
+<li><a href="faculty.html" style="font-size:15px;">Faculty</a></li>
+<li><a href="login1.html" style="font-size:15px;">Login</a></li>
+<input type="text" placeholder="Enter Name" style="margin-top:20px;">
+<span class="icofont-search" style="color:white;"></span>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<!----navbar complete---->
+
+<!-----campus----->
+<div class="row campus">
+<div class="col-sm-12 color">
+<div style="min-height:70px;"></div>
+</div>
+
+
+</div>
+</div>
+<!---registration---->
+<div style="min-height:30px;"></div>
+<div class="row regist">
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 login">
+<div class="row">
+<div class="col-sm-12 login1">
+<div style="min-height:15px;"></div>
+<a href="contact.html"><b>Get In Touch Form</b></a>
+</div>
+
+</div>
+</div>
+<div class="col-sm-4"></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 page">
+<div class="col-sm-12">
+<div style="min-height:50px;"></div>
+<label>Name *</label><br>
+<div class="input-group">
+<input style="min-height:40px;" type="text" placeholder="Enter your name"  class="form-control">
+<span  class="input-group-addon"><i class="icofont-Email"></i></span>
+</div><br>
+
+<label>Email *</label><br>
+<div class="input-group">
+<input style="min-height:40px;" type="text" placeholder="Enter your email"  class="form-control">
+<span  class="input-group-addon"><i class="icofont-lock"></i></span>
+</div><br>
+
+<label>Mobile Number *</label><br>
+<div class="input-group">
+<input style="min-height:40px;" type="text" placeholder="91xxxxxxxx"  class="form-control">
+<span  class="input-group-addon"><i class="icofont-lock"></i></span>
+</div><br>
+
+<label>Subject *</label><br>
+<div class="input-group">
+<input style="min-height:40px;" type="text" placeholder="..."  class="form-control">
+<span  class="input-group-addon"><i class="icofont-lock"></i></span>
+</div><br>
+</div>
+<div class="row">
+<div class="col-sm-8"></div>
+<div class="col-sm-4">
+<p style="color:lightgreen;font-size:12px;text-align:right;">Forgot Password?</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<textarea rows="3" placeholder="Enter your messages here..."></textarea>
+</div>
+</div>
+<div class="modal-footer">
+<button style="min-height:40px;background:#7a0000;color:white;" type="button" class="btn btn-danger" data-dismiss="modal">Send Messages</button>
+</div>
+<p style="text-align:center;">New user? <a href="registration.html">Register here</a></p>
+</div>
+<div class="col-sm-4"></div>
+
+</div>
+</div>
+
+
+
+<!----map---->
+<div style="min-height:20px;"></div>
+<div class="row" style="min-height:400px;background:#fff5f5;">
+<div style="min-height:20px;"></div>
+
+<div class="col-sm-6">
+<div class="row global">
+<h1 style="font-family:sans-serif;color:#7a0000;font-size:35px;"><b>
+University Contact Information<span class="icofont-phone"></span></b></h1><br>
+<h5 style="color:black;font-size:14px;font-family:sans-serif;">📍 Address-&nbsp <span style="color:#7a0000;font-family:sans-serif;">
+Integral University, Dashauli, Kursi Road, 
+Lucknow, Uttar Pradesh – 226026</span></h5>
+<h5 style="color:black;font-size:14px;font-family:sans-serif;">📞 Phone Number-&nbsp<span style="color:#7a0000;font-family:sans-serif;">+91-522-2890730</span></h5>
+<h5 style="color:black;font-size:14px;font-family:sans-serif;">✉️ Email Address-&nbsp<span style="color:#7a0000;font-family:sans-serif;">info@iul.ac.in</span></h5>
+<h5 style="color:black;font-size:14px;font-family:sans-serif;">🌐 Website-&nbsp<span style="color:#7a0000;font-family:sans-serif;">Integral University Official Website</span></h5>
+<br><br>
+<h1 style="font-family:sans-serif;color:#7a0000;font-size:35px;"><b>
+Follow Us</b></h1><br>
+<div class="row">
+<div class="col-sm-1"><span><i class="icofont-instagram" style="color:pink;font-size:50px;"></i></span></div>
+<div class="col-sm-1"><span><i class="icofont-linkedin" style="color:skyblue;font-size:50px;"></i></span></div>
+<div class="col-sm-1"><span><i class="icofont-facebook" style="color:blue;font-size:50px;"></i></span></div>
+<div class="col-sm-1"><span><i class="icofont-youtube" style="color:red;font-size:50px;"></i></span></div>
+<div class="col-sm-1"><span><i class="icofont-telegram" style="color:skyblue;font-size:50px;"></i></span></div>
+<div class="col-sm-1"><span><i class="icofont-snapchat" style="color:yellow;font-size:50px;"></i></span></div>
+<div class="col-sm-6"></div>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<h1 style="text-align:center;font-family:sans-serif;color:#7a0000;font-size:35px;"><b>Google  Map<span class="icofont-Google-map"></span></b></h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.2762350643666!2d80.99890839999999!3d26.9581503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bff2addd9b239%3A0xc21a9bbd557936ec!2sIntegral%20University!5e0!3m2!1sen!2sin!4v1789203086791!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+</div>
+
+<!-----footer----->
+<div style="min-height:40px;"></div>
+<div class="row footer" data-aos="zoom-out">
+<div style="min-height:20px;"></div>
+<div class="col-sm-1"></div>
+<div class="col-sm-9">
+<div class="row footlogo" style="border-bottom:1px solid white;">
+<div class="col-sm-1 col-xs-1">
+<div style="min-height:20px;"></div>
+<img src="data:image/png;base64,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" height="50" width="100%">
+</div>
+
+<div class="col-sm-5 uni">
+<h3 style="font-size:20px;font-family:sans-serif;color:white;"><b>INTEGRAL UNIVERSITY</b></h3>
+<p style="font-family:sans-serif;font-size:13px;color:lightgreen;">Established 2004 · NAAC A+ · Lucknow, India</p>
+</div>
+<div class="col-sm-6"></div>
+</div>
+<div class="row">
+<div style="min-height:5px;"></div>
+<div class="col-sm-2 col-xs-6">
+<p style="color:lightgreen;"><b>Quick Links</b></p>
+<p style="color:white;">About Us</p>
+<p style="color:white;">Rankings</p>
+<p style="color:white;">Integral Times</p>
+<p style="color:white;">Events</p>
+<p style="color:white;">Campus Tour</p>
+<p style="color:white;">Careers at IU</p>
+
+</div>
+<div class="col-sm-1 col-xs-6"></div>
+<div class="col-sm-2">
+<p style="color:lightgreen;"><b>Quick Links</b></p>
+<p style="color:white;">About Us</p>
+<p style="color:white;">Rankings</p>
+<p style="color:white;">Integral Times</p>
+<p style="color:white;">Events</p>
+<p style="color:white;">Campus Tour</p>
+<p style="color:white;">Careers at IU</p>
+
+</div>
+<div class="col-sm-1"></div>
+<div class="col-sm-2 col-xs-4">
+<p style="color:lightgreen;"><b>Quick Links</b></p>
+<p style="color:white;">About Us</p>
+<p style="color:white;">Rankings</p>
+<p style="color:white;">Integral Times</p>
+<p style="color:white;">Events</p>
+<p style="color:white;">Campus Tour</p>
+<p style="color:white;">Careers at IU</p>
+
+</div>
+<div class="col-sm-2 col-xs-4">
+<p style="color:lightgreen;"><b>Quick Links</b></p>
+<p style="color:white;">About Us</p>
+<p style="color:white;">Rankings</p>
+<p style="color:white;">Integral Times</p>
+<p style="color:white;">Events</p>
+<p style="color:white;">Campus Tour</p>
+<p style="color:white;">Careers at IU</p>
+
+</div>
+<div class="col-sm-2 col-xs-4">
+<p style="color:lightgreen;"><b>Quick Links</b></p>
+<p style="color:white;">About Us</p>
+<p style="color:white;">Rankings</p>
+<p style="color:white;">Integral Times</p>
+<p style="color:white;">Events</p>
+<p style="color:white;">Campus Tour</p>
+<p style="color:white;">Careers at IU</p>
+
+</div>
+
+</div>
+<div class="row">
+<p style="color:lightgreen;">© 2026 Integral University. All Rights Reserved.<br>
+Designed & Developed by IT Department</p>
+</div>
+</div>
+<div class="col-sm-2">
+<div style="min-height:80px;"></div>
+<h2 style="color:white;font-size:19px;">Integral University</h2>
+<p style="color:white;font-size:15px;">Kursi Road, Lucknow, Uttar Pradesh</p>
+<p style="color:white;font-size:15px;">📞 +91-XXXXXXXXXX</p>
+<a style="color:lightgreen;font-size:15px;">✉️ info@example.com</a>
+</div>
+</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

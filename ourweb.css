@@ -1,0 +1,548 @@
+
+body{
+    margin:0;
+    padding:0;
+}
+.menu{
+width:100%;
+position:fixed-top;
+z-index:100;
+}
+
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+
+.navbar{
+    margin-bottom:0;
+
+}
+.faculty-nav .navbar-nav > li > a{
+    color:white;
+    padding:25px 15px;
+    transition:.3s;
+}
+
+.faculty-nav .navbar-nav > li > a:hover,
+.faculty-nav .navbar-nav > .active > a{
+    color:#7a0000;
+    background:#fff5f5;
+}
+
+
+.header{
+    margin:0;
+    padding:0;
+}
+.logo{
+	color:white;
+	font-family:sans-serif;
+	
+}
+.header{
+	min-height:600px;
+	width:100%;
+    position:relative;
+}
+.color1{
+	position:absolute;
+	min-height:600px;
+	background: rgba(122, 0, 0, 0.3);
+	width:100%;
+}
+
+
+.box1{
+    width:100%;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+
+}
+
+.box1 video{
+    width:100%;
+    height:600px;
+    object-fit:cover;
+    display:block;
+
+
+}
+@media(max-width:767px){
+
+    .header{
+        min-height:auto;
+    }
+
+    .box1{
+        width:100%;
+        min-height:auto;
+    }
+
+    .box1 video{
+        width:100%;
+        height:auto;
+        object-fit:cover;
+    }
+    .color1{
+     display:none;
+    }
+
+}
+#about{
+	font-size:80px;
+	color:#111111;
+	text-align:center;
+	font-family:edict fallback;
+}
+@media(max-width:900px){
+	#about{
+		font-size:40px;
+		text-align:center;
+	}
+}
+.aboutpara{
+	min-height:150px;
+	
+}
+@media(max-width:900px){
+	.aboutpara{
+		min-height:70px;
+	}
+}
+#para{
+	
+	text-align:center;
+	color:#111111;
+	font-size:20px;
+	font-family:source sans 3;
+}
+@media(max-width:900px){
+	#para{
+		text-align:center;
+		font-size:16px;
+	}
+}
+.btn{
+	min-height:100px;
+	width:100%;
+}
+#btn{
+	border-radius:20px;
+	color:white;
+	background:#7a0000;
+	min-height:40px;
+	width:180px;
+}
+.course{
+	min-height:420px;
+	width:100%;
+	background:#7a0000;
+	
+}
+.image1{
+	position:realtive;
+	height:300px;
+	background-image:url('https://images.openai.com/static-rsc-4/T5vQjWCcZ9YRTc3F3m4jsJH3rZDE4cybxgzHXluuD7z27G1ZIQgIxUeeoBbilhTLPvDK6gki1Bka__DTpMEUMb0l-wtiYUlCqt2dzxnOD9wS2CXlDLFNkr8Z3HYE8Nci2MtwzgiwN6YeEzvUaVoe-AZHyBw09FsUSBoVn7xiFNCPX-_YoTXTPYIFtZDvyILP?purpose=fullsize');
+	background-size:cover;
+	background-position:center;
+	border-radius:10px;
+	margin-bottom:20px;
+}
+.hover1{
+	position:absolute;
+	background: rgba(122, 0, 0, 0.3);
+	border-radius:10px;
+	bottom:0;
+	top:70%;
+	left:0;
+	height:30%;
+	width:100%;
+	transition:0.5s ease;
+	
+}
+.image1 .hover1:hover{
+	height:100%;
+	width:100%;
+	top:0;
+}
+.image2{
+	position:realtive;
+	height:300px;
+	background-image:url('https://images.openai.com/static-rsc-4/SGd-h4H3H8Lda1j6jO43Em_wvj89ZYggE-pyVudCCjA3qi45JBfKupM5kNFrFiGBH5to-uAAy4fSV0yKUVRw800lQ9hyrpekZpNJs7vvcCUOun1zbEuQ2o3vlRenlKF0IwXEfwMvQu9yDvSdaU6-2P8xmjK8Ob-rRybVGE1uU1mXjLgQzaa2-RmjWnhAh8N2?purpose=fullsize');
+	background-size:cover;
+	background-position:center;
+	border-radius:10px;
+	margin-bottom:20px;
+}
+.hover2{
+	position:absolute;
+	background: rgba(122, 0, 0, 0.3);
+	border-radius:10px;
+	bottom:0;
+	top:70%;
+	left:0;
+	height:30%;
+	width:100%;
+	transition:0.5s ease;
+	
+}
+.image2 .hover2:hover{
+	height:100%;
+	width:100%;
+	top:0;
+}
+.image3{
+	position:realtive;
+	height:300px;
+	background-image:url('https://images.openai.com/static-rsc-4/cJ2bK9jNnQjWWLPx5TAwJJj3QU_p6E4qVihp_AFteP2Kiw_kDdUwtc-MJSnp9eo3fe5H6OzqD2WAUaSLqJGZ5umS39mjFuy_3rGp_xr7h7N2DnP3SRzAyxk2nnycjFX5szLt-7dgIQC21WzbrG0nMa19zVcQ2MSLX8EWYCV809qAXuJUa2raUdE4AIGr__UT?purpose=fullsize');
+	background-size:cover;
+	background-position:center;
+	border-radius:10px;
+	margin-bottom:20px;
+}
+.hover3{
+	position:absolute;
+	background: rgba(122, 0, 0, 0.3);
+	border-radius:10px;
+	bottom:0;
+	top:70%;
+	left:0;
+	height:30%;
+	width:100%;
+	transition:0.5s ease;
+	
+}
+.image3 .hover3:hover{
+	height:100%;
+	width:100%;
+	top:0;
+}
+.pages{
+	position:realtive;
+	min-height:1400px;
+	
+}
+.box5{
+    position:sticky;
+    top:0;
+    min-height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:100px 0px 100px 0px;
+	margin-bottom:20px;
+}
+
+.slide1{
+    z-index:1;
+	background:#7a0000;
+	
+}
+
+.slide2{
+    background:#fff5f5; 
+    z-index:2;
+	
+}
+
+.slide3{
+    background:#7a0000;
+    z-index:3;
+}
+#head2{
+	font-size:80px;
+	color:#111111;
+	text-align:center;
+	font-family:edict fallback;
+}
+@media(max-width:900px){
+	#head2{
+		font-size:40px;
+		text-align:center;
+	}
+}
+.police{
+	min-height:200px;
+	border-radius:50px 0px 50px  0px;
+}
+.police img{
+		border-radius:50px 0px 50px  0px;
+
+}
+#p1{
+	color:white;
+	font-size:30px;
+	font-family:sans-serif;
+}
+#deg1{
+	color:lightgreen;
+	font-size:22px;
+	font-family:sans-serif;
+}
+#ptext{
+	color:white;
+	font-size:16px;
+	font-family:sans-serif;
+	text-align:justify;
+}
+
+
+.dr{
+	min-height:200px;
+	border-radius:50px 0px 50px  0px;
+}
+.dr img{
+		border-radius:50px 0px 50px  0px;
+
+}
+#p2{
+	color:#7a0000;
+	font-size:30px;
+	font-family:sans-serif;
+}
+#deg2{
+	color:lightgreen;
+	font-size:22px;
+	font-family:sans-serif;
+}
+#ptext2{
+	color:#7a0000;
+	font-size:16px;
+	font-family:sans-serif;
+	text-align:justify;
+}
+
+
+
+
+.vikas{
+	min-height:200px;
+	border-radius:50px 0px 50px  0px;
+}
+.vikas img{
+		border-radius:50px 0px 50px  0px;
+
+}
+#p3{
+	color:white;
+	font-size:30px;
+	font-family:sans-serif;
+}
+#deg3{
+	color:lightgreen;
+	font-size:22px;
+	font-family:sans-serif;
+}
+#ptext3{
+	color:white;
+	font-size:16px;
+	font-family:sans-serif;
+	text-align:justify;
+}
+.notice{
+	background:#fff5f5;
+	min-height:600px;
+	
+}
+#notice{
+	color:lightgreen;
+	font-size:40px;
+	min-height:50px;
+	font-family:sans-serif;
+	text-align:center;
+}
+@media(max-width:900px){
+	#notice{
+		min-height:40px;
+		font-size:30px;
+		text-align:center;
+	}
+}
+#regular{
+	font-size:22px;
+	text-align:center;
+	font-family:sans-serif;
+	color:#7a0000;
+	min-height:40px;
+}
+@media(max-width:900px){
+	#regular{
+		min-height:30px;
+		font-size:20px;
+		text-align:center;
+	}
+}
+.update{
+	min-height:450px;
+}
+.update1{
+	min-height:450px;
+	border:1px solid #7a0000;
+}
+.update2{
+	min-height:450px;
+	border:1px solid #7a0000;
+}
+.update3{
+	min-height:450px;
+	border:1px solid #7a0000;
+}
+#job{
+font-size:14px;
+font-family:sans-serif;
+color:lightgreen;	
+}
+#job:hover{
+	text-decoration:underline;
+}
+#date{
+	color:#7a0000;
+	font-size:14px;
+}
+#para2{
+	font-size:14px;
+	color:black;
+	
+	
+}
+#para2:hover{
+	text-decoration:underline;
+}
+#button1{
+	min-height:40px;
+	width:200px;
+	background:white;
+	color:black;
+}
+.event{
+	min-height:600px;
+	background:#7a0000;
+	border-radius:100px 0px 100px 0px;
+}
+.eventhead{
+	min-height:60px;
+}
+#event{
+	color:white;
+	font-size:30px;
+	text-align:center;
+
+}
+@media(max-width:900px){
+	#event{
+		min-height:30px;
+		font-size:20px;
+		text-align:center;
+	}
+}
+#up{
+	color:white;
+	font-size:22px;
+	text-align:center;
+
+}
+@media(max-width:900px){
+	#up{
+		min-height:30px;
+		font-size:18px;
+		text-align:center;
+	}
+}
+.event1{
+	margin-bottom:20px;
+}
+.event2{
+	margin-bottom:20px;
+}
+.event3{
+	margin-bottom:20px;
+}
+.event4{
+	margin-bottom:20px;
+}
+.global{
+	min-height:100px;
+}
+.map{
+	min-height:350px;
+
+}
+.struct{
+	min-height:500px;
+	background:#7a0000;
+	border-radius:100px 0px 100px 0px;
+	position:relative;
+}
+@media(max-width:900px){
+	.struct{
+		min-height:1200px;
+	}
+}
+@media(max-width:900px){
+	.img{
+		margin-bottom:20px;
+	}
+}
+.trans{
+	position:absolute;
+    min-height:500px;
+	width:100%;
+}
+.integral{
+	background-image:url('https://iul.org.in/assets/administrativeBlock-DCB2XEAn.webp');
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	min-height:500px;
+	width:100%;
+}
+.color{
+	position:relative;
+	min-height:500px;
+	background: rgba(122, 0, 0, 0.3);
+	width:100%;
+}
+
+.footer{
+	min-height:400px;
+	background:#7a0000;
+	border-radius:100px 0px 100px 0px;
+}
+.footlogo{
+	min-height:70px;
+}
+.uni{
+	min-height:100px;
+	
+}
+@media(max-width:900px){
+.uni{
+	min-height:60px;
+	
+}	
+}
+#inte{
+	font-family:sans-serif;
+	font-size:50px;
+	color:white;
+}
+@media(max-width:900px){
+	#inte{
+	font-family:sans-serif;
+	font-size:25px;
+	text-align:center;
+	color:white;
+	min-height:50px;
+}
+}
+.logo2{
+min-height:100px;
+}
+@media(max-width:900px){
+.logo2 img{
+min-height:70px;
+width:100%;
+}
+}
